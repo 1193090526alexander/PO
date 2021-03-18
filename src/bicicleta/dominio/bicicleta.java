@@ -8,6 +8,7 @@ public class bicicleta {
     public String color;
     public double velocidad;
 
+
     public bicicleta(long serial, String marca, String modelo, long precio, String color) {
         this.serial = serial;
         this.marca = marca;
@@ -16,6 +17,7 @@ public class bicicleta {
         this.color = color;
         this.velocidad=0;
     }
+
 
 
 
