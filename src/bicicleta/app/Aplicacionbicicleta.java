@@ -1,4 +1,4 @@
-package bicicleta;
+package bicicleta.app;
 
 import bicicleta.dominio.bicicleta;
 
@@ -11,7 +11,8 @@ public class Aplicacionbicicleta {
 
         bici.acelerar(36.5);
         bici.frenar(10.5);
-        bici.cambiarPrecioYColor(720000, "morada claro");
+        bici.setColor("negra");
+        bici.setPrecio(589000);
 
         System.out.println(bici.obtenerInformacio());
 
