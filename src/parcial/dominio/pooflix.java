@@ -5,7 +5,7 @@ import java.util.List;
 
 public class pooflix {
     //Atributos
-    public int CAPACIDAD;
+    public int CAPACIDAD=15;
     private List<material> Material;
 //Constructures
     public pooflix(int CAPACIDAD) {
@@ -13,33 +13,72 @@ public class pooflix {
         this.Material = new ArrayList<>();
     }
     //Metodos
-    public boolean agregar(material Material){
+    public boolean agregar(material Materia){
         if(this.Material.size() < CAPACIDAD){
-            this.Material.add(Material);
+            this.Material.add(Materia);
             return true;
         }
         return false;
     }
 
-    public boolean retirar(int codigo) {
+    public boolean retirar(String nombre) {
         material retirarMaterial = null;
 
-        for (material material: this.Material) {
-            if (material.getCodigo().equals(codigo)) {
+        for (material materia : this.Material) {
+            if (materia.getNombre().equals(nombre)) {
+                materia = retirarMaterial-1;
+
+                return true;
             }
+            System.out.println("el producto no existe");
+            return false;
         }
+        return false;
     }
     public material buscar(int codigo){
+        material materialPoo = null;
+
+        for (material m: this.Material){
+            if (m.getCodigo().equalsIgnoreCase(codigo)) {
+                materialPoo = m;
+                break;
+            }
+
+        }
+        return materialPoo;
+
 
     }
     public material buscar(String nombre){
-        return null;
+        material materialPoo = null;
+
+        for (material m: this.Material){
+            if (m.getNombre().equalsIgnoreCase(nombre)) {
+                materialPoo = m;
+                break;
+            }
+
+        }
+        return materialPoo;
+
+
     }
     public List<material> buscarPorTipo(String tipo){
-        return null;
+        List<material> buscarTipo = null;
+
+        for (material mat: this.Material){
+            if (mat.getTipo().equalsIgnoreCase(tipo)) {
+                buscarTipo = mat
+
+            }
+
+        }
+        return buscarTipo;
+
     }
     public int calcularDuracionTotal(){
-        return 0;
+
+
     }
     public List<material> ordenarPorCodigo(){
         return null;
