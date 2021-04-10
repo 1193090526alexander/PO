@@ -1,6 +1,6 @@
 package parcial.dominio;
 
-public class material {
+public class material implements Comparable<material> {
     private int codigo;
     private String nombre;
     private int duracion;
@@ -11,8 +11,18 @@ public class material {
         this.nombre = nombre;
         this.duracion = duracion;
         this.tipo = tipo;
-    }
 
+    }
+    @Override
+    public int compareTo(material o) {
+        if (o.getCodigo()>this.codigo){
+            return -1 ;
+        }else if(o.getCodigo()<this.codigo) {
+            return 1;
+        }else{
+            return 0;
+        }
+    }
     public int getCodigo() {
         return codigo;
     }
@@ -32,4 +42,6 @@ public class material {
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
+
+
 }
