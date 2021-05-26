@@ -1,41 +1,31 @@
 package dispensador.dominio;
 
 public class productos {
-    private String codigo;
     private String nombre;
-    private short precioMecato;
-    private byte maxCantidad;
-    private byte totalProductos;
+    private int edad;
+    private double estatuta;
 
-    public productos(String codigo, String nombre, short precioMecato) {
-        this.codigo = codigo;
+    public productos(String nombre){
         this.nombre = nombre;
-        this.precioMecato = precioMecato;
-        this.maxCantidad = 8;
-        this.totalProductos = 0;
+
     }
 
-    public String getCodigo() {
-        return codigo;
+    public int getEdad() {
+        return edad;
     }
 
+    public double getEstatuta() {
+        return estatuta;
+    }
     public String getNombre() {
         return nombre;
     }
 
-    public short getPrecioMecato() {
-        return precioMecato;
+    public void setEdad(int edad) {
+        this.edad = edad;
     }
 
-    public byte getTotalProductos() {
-        return totalProductos;
+    public void setEstatuta(double estatuta) {
+        this.estatuta = estatuta;
     }
-    public byte getMaxCantidad() {
-        return maxCantidad;
-    }
-
-    public void setPrecioMecato(short precio) {
-        this.precioMecato = precioMecato;
-    }
-
 }

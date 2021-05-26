@@ -67,4 +67,11 @@ public class bicicleta {
         return color;
     }
 
+    public void setPrecio(long precio) {
+        this.precio = precio;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
 }
