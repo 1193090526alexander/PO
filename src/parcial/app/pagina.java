@@ -13,7 +13,10 @@ public class pagina {
         material pel5 = new material(102, "aguaman",122,"pelicula");
         material pel6 = new material(2, "batman",172,"pelicula");
         material pel7 = new material(3, "superman",102,"pelicula");
+<<<<<<< HEAD
 
         peliculas.agregar(12,"titanic", )
+=======
+>>>>>>> origin/master
     }
 }
