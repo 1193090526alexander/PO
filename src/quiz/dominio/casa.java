@@ -1,4 +1,4 @@
 package quiz.dominio;
 
-public class casa {
+public class casa extends inmueble{
 }
