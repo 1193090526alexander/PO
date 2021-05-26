@@ -8,7 +8,7 @@ import java.util.List;
 
 public class aplicacion {
     public static void main(String[] args) {
-        agencia agencia= new agencia("Todo lo que necesites");
+        agencia agencia= new agencia("Todo lo que necesites",  );
         List<inmueble> Inmuebles = new ArrayList<>();
         Inmuebles inmueble =new inmueble()
     }
